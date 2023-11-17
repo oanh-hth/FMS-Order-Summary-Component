@@ -176,6 +176,10 @@ article {
         margin-block: 0;
     }
 
+    .summary {
+        padding-top: 2.8125rem;
+    }
+
     .summary div:first-of-type {
         margin-block: 1.25rem 2rem;
         padding: 1.5rem;
