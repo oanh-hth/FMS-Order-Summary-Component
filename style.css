@@ -24,6 +24,7 @@
     --fw-900: 900;
 
     --padding: 2rem;
+    --spacing: 0.19rem;
 }
 
 img {
@@ -62,6 +63,7 @@ div > p span {
     color: hsl(var(--clr-blue-500));
     display: block;
     font-size: var(--fs-sm-1);
+    margin-bottom: var(--spacing);
 }
 
 article {
@@ -171,6 +173,7 @@ article {
         --fs-sm-1: 1rem;
         --fs-sm-2: 0.875rem;
         --padding: 3rem;
+        --spacing: 0.37rem;
     }
 
     article {
