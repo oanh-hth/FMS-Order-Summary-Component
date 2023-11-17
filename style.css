@@ -22,6 +22,8 @@
     --fw-500: 500;
     --fw-700: 700;
     --fw-900: 900;
+
+    --padding: 2rem;
 }
 
 img {
@@ -72,7 +74,7 @@ article {
 }
 
 .summary {
-    padding: 2rem;
+    padding: var(--padding);
 }
 
 .summary div:first-of-type {
@@ -167,9 +169,23 @@ article {
         --fs-body: 1rem;
         --fs-sm-1: 1rem;
         --fs-sm-2: 0.875rem;
+        --padding: 3rem;
     }
 
     article {
         margin-block: 0;
+    }
+
+    .summary div:first-of-type {
+        margin-block: 1.25rem 2rem;
+        padding: 1.5rem;
+    }
+
+    h1 {
+        margin-bottom: 1.06rem;
+    }
+
+    .btn-cancel {
+        margin-top: 2rem;
     }
 }
