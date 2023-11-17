@@ -25,6 +25,8 @@
 
     --padding: 2rem;
     --spacing: 0.19rem;
+
+    --line-height: 1.5625rem;
 }
 
 img {
@@ -55,7 +57,7 @@ h1 {
 }
 
 h1 + p {
-    line-height: 1.5625rem;
+    line-height: var(--line-height);
 }
 
 div > p span {
@@ -174,6 +176,7 @@ article {
         --fs-sm-2: 0.875rem;
         --padding: 3rem;
         --spacing: 0.37rem;
+        --line-height: 1.625rem;
     }
 
     article {
