@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
 
-* {
+*, *::before, *::after {
     margin: 0;
     box-sizing: border-box;
 }
@@ -27,11 +27,6 @@
     --spacing: 0.19rem;
 
     --line-height: 1.5625rem;
-}
-
-img {
-    display: block;
-    max-width: 100%;
 }
 
 body {
@@ -78,25 +73,29 @@ article {
     box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.15);
 }
 
-.summary {
+.order {
     padding: var(--padding);
 }
 
-.summary div:first-of-type {
+.order div:first-of-type {
     padding: 1rem;
     margin-block: 1.5rem;
     background-color: hsl(var(--clr-gray-100));
-    border-radius: 10px;
+    border-radius: 0.625rem;
     display: flex;
     gap: 1.125rem;
     align-items: center;
+}
+
+img {
+    display: block;
+    max-width: 100%;
 }
 
 .btn {
     border: none;
     cursor: pointer;
     background-color: transparent;
-    display: block;
 }
 
 .btn:hover,
@@ -123,8 +122,8 @@ article {
 .btn-cancel {
     width: 100%;
     font-weight: var(--fw-900);
-    font-size: var(--fs-body);
-    border-radius: 10px;
+    font-size: 0.9375rem;
+    border-radius: 0.625rem;
 }
 
 .btn-submit {
@@ -137,16 +136,13 @@ article {
     box-shadow: 0px 20px 20px 0px rgba(56, 42, 225, 0.19);
 }
 
-.btn-cancel {
-    margin-top: 1.5rem;
-}
-
 .btn-submit:hover,
 .btn-submit:focus {
     opacity: 60%;
 }
 
 .btn-cancel {
+    margin-top: 1.5rem;
     color: var(--color-desatured-blue);
 }
 
@@ -167,7 +163,6 @@ article {
     }
 }
 
-
 @media screen and (min-width: 769px) {
     :root {
         --fs-h1: 1.75rem; 
@@ -179,21 +174,21 @@ article {
         --line-height: 1.625rem;
     }
 
+    h1 {
+        margin-bottom: 1.06rem;
+    }
+
     article {
         margin-block: 0;
     }
 
-    .summary {
+    .order {
         padding-top: 2.8125rem;
     }
 
-    .summary div:first-of-type {
+    .order div:first-of-type {
         margin-block: 1.25rem 2rem;
         padding: 1.5rem;
-    }
-
-    h1 {
-        margin-bottom: 1.06rem;
     }
 
     .btn-cancel {
