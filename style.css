@@ -143,12 +143,12 @@ img {
 
 .btn-cancel {
     margin-top: 1.5rem;
-    color: var(--color-desatured-blue);
+    color: hsl(var(--clr-blue-400));
 }
 
 .btn-cancel:hover,
 .btn-cancel:focus {
-    color: var(--color-dark-blue);
+    color: hsl(var(--clr-blue-500));
 }
 
 @media screen and (min-width: 376px) {
